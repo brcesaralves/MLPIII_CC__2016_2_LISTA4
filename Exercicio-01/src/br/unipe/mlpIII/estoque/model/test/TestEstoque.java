@@ -1,5 +1,7 @@
 package br.unipe.mlpIII.estoque.model.test;
 
-public class TestEstoque {
+import junit.framework.TestCase;
+
+public class TestEstoque extends TestCase{
 
 }
