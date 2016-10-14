@@ -5,6 +5,8 @@ import java.util.Set;
 
 import br.unipe.mlpIII.estoque.model.Estoque;
 import br.unipe.mlpIII.estoque.model.Produto;
+import br.unipe.mlpIII.estoque.model.TipoEstoque;
+
 
 public class Principal {
 	
@@ -15,8 +17,8 @@ public class Principal {
 		Set<Estoque> estoques = new HashSet<>();
 		
 		
-		estoque = new Estoque("Estoque Central");
-
+		estoque = new Estoque("QUALITECH - EPITACIO", TipoEstoque.CENTRAL);
+		
 		produto = new Produto(12, "Notebook Dell Vostro", 3599.90);
 		estoque.setListaProdutos(produto);
 		produto = new Produto(17, "HD Externo WD 1TB", 359.90);
@@ -25,7 +27,7 @@ public class Principal {
 		estoques.add(estoque);
 		
 		
-		estoque = new Estoque("Estoque Setorial - 01");
+		estoque = new Estoque("QUALITECH - MANGABEIRA", TipoEstoque.SETORIAL);
 		
 		produto = new Produto(12, "Notebook Lenovo", 2599.90);
 		estoque.setListaProdutos(produto);

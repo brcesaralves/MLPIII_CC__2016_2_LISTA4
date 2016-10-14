@@ -7,10 +7,11 @@ public class Estoque {
 	
 	private String nome;
 	private Set<Produto> listaProdutos = new HashSet<>();
-	
+	private TipoEstoque tipoEstoque;
 		
-	public Estoque(String nome) {
+	public Estoque(String nome, TipoEstoque tipoEstoque) {
 		this.nome = nome;
+		this.tipoEstoque = tipoEstoque;
 	}
 
 	public String getNome() {
@@ -31,6 +32,7 @@ public class Estoque {
 	
 	public void listarEstoque(){
 		System.out.println("================== " + this.nome + " ==================");
+		System.out.println("======================== " + this.tipoEstoque.name() + " =========================");
 		
 		for(Produto p : listaProdutos){
 			System.out.println("Código: " + p.getCodigo());
