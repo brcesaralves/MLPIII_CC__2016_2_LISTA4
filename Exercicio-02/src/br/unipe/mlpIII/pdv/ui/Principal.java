@@ -46,7 +46,7 @@ public class Principal {
 
 		// IMPRIMINDO ARRAYLIST com reverse
 		Collections.reverse(itens);
-		System.out.println("================ Lista Rversa =================");
+		System.out.println("================ Lista Reversa =================");
 		for (Item i : itens) {
 			System.out.println(i.toString() + "\n");
 		}
