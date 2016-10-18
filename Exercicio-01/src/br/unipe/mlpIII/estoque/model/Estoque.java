@@ -5,6 +5,10 @@ import java.util.Set;
 
 public class Estoque {
 	
+	/**
+	 * Utilizei a classe da interface Set, pois os produtos não iram se repetir.
+	 * Então ela é a mais recomendada pois é mais rápida na inserção e busca.
+	 */
 	private String nome;
 	private Set<Produto> listaProdutos = new HashSet<>();
 	private TipoEstoque tipoEstoque;
